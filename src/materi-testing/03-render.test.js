@@ -4,9 +4,9 @@ import App from "../App";
 describe("Testing untuk seluruh App", () => {
   it("memunculkan seluruh html view dari app", () => {
     render(<App />);
-    screen.debug();
+    // screen.debug();
     const btn = screen.getByRole("button");
     fireEvent.click(btn);
-    screen.debug();
+    // screen.debug();
   });
 });
