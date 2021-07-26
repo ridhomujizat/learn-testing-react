@@ -27,7 +27,7 @@ describe("Testing untuk seluruh App setelah melakukan action click pada button",
 
   it("Memastikan kontent button sesuai setelah action click button", () => {
     render(<App />);
-    const textBtn = screen.getByText("Munculkan");
+    const textBtn = screen.getByTestId("button-fireEvent");
     fireEvent.click(textBtn);
     const textBtnResult = screen.getByText("Sembunyikan");
     expect(textBtnResult).toBeInTheDocument();

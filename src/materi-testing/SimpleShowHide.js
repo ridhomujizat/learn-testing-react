@@ -14,7 +14,9 @@ const SimpleShowHide = () => {
   return (
     <div>
       <p>Saya sedang {show ? "muncul" : "sembunyi"}</p>
-      <button onClick={toggle}>{show ? "Sembunyikan" : "Munculkan"}</button>
+      <button onClick={toggle} data-testid="button-fireEvent">
+        {show ? "Sembunyikan" : "Munculkan"}
+      </button>
     </div>
   );
 };
